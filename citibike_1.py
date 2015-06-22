@@ -47,7 +47,7 @@ class CitiBikeChallenge():
         
     def peak_hours(self, start_time):
         self.idx = np.zeros([24, start_time.shape[0]])
-        print 'Calculating peak hours ...'
+        print 'Calculating usage per hours ...'
         def _check(start_time, _cond):
             # Classify rides into hours
             if start_time.hour == _cond.total_seconds()/3600:                
